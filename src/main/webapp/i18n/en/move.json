@@ -1,0 +1,26 @@
+{
+    "hipTttApp": {
+        "move" : {
+            "home": {
+                "title": "Moves",
+                "createLabel": "Create a new Move",
+                "createOrEditLabel": "Create or edit a Move",
+                "search": "Search for Move"
+            },
+            "created": "A new Move is created with identifier {{ param }}",
+            "updated": "A Move is updated with identifier {{ param }}",
+            "deleted": "A Move is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Move {{ id }}?"
+            },
+            "detail": {
+                "title": "Move"
+            },
+            "timestamp": "Timestamp",
+            "row": "Row",
+            "col": "Col",
+            "player": "Player",
+            "game": "Game"
+        }
+    }
+}

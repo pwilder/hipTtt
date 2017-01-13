@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "timestamp",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20170113112315",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "game",
+    "pagination": "infinite-scroll"
+}

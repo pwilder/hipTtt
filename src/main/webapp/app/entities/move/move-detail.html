@@ -1,0 +1,39 @@
+
+<div>
+    <h2><span data-translate="hipTttApp.move.detail.title">Move</span> {{vm.move.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="hipTttApp.move.timestamp">Timestamp</span></dt>
+        <dd>
+            <span>{{vm.move.timestamp | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="hipTttApp.move.row">Row</span></dt>
+        <dd>
+            <span>{{vm.move.row}}</span>
+        </dd>
+        <dt><span data-translate="hipTttApp.move.col">Col</span></dt>
+        <dd>
+            <span>{{vm.move.col}}</span>
+        </dd>
+        <dt><span data-translate="hipTttApp.move.player">Player</span></dt>
+        <dd>
+            <span>{{vm.move.player}}</span>
+        </dd>
+        <dt><span data-translate="hipTttApp.move.game">Game</span></dt>
+        <dd>
+            <a ui-sref="game-detail({id:vm.move.game.id})">{{vm.move.game.id}}</a>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="move-detail.edit({id:vm.move.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

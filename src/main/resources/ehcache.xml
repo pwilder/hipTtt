@@ -20,5 +20,9 @@
 
     <cache alias="edu.pwilder.hipttt.domain.User.persistentTokens" uses-template="simple"/>
 
+    <cache alias="edu.pwilder.hipttt.domain.Game" uses-template="simple"/>
+
+    <cache alias="edu.pwilder.hipttt.domain.Move" uses-template="simple"/>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </config>
